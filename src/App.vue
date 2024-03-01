@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppBar from "./components/organisms/AppBar.vue";
+import AppFooter from "./components/organisms/AppFooter.vue";
+</script>
 
 <template>
-  <h1>aiqfome</h1>
+  <AppBar />
+
+  <AppFooter />
 </template>
 
 <style scoped></style>
