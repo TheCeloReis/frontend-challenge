@@ -1,0 +1,11 @@
+# Ignore built files
+/dist/
+
+*.log
+
+/coverage/
+
+# Ignore build artifacts
+/build/
+
+
