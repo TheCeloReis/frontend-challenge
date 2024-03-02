@@ -3,7 +3,7 @@
     :class="[
       'rounded-lg text-base h-9 pl-4 pr-6 inline-flex items-center justify-center leading-4',
       {
-        'bg-secondary text-white': variant === 'primary',
+        'bg-secondary text-white': variant === 'primary' || !variant,
         'bg-primary-lightest text-primary': variant === 'secondary',
         'bg-muted text-white': variant === 'muted',
         'pl-4': hasLeftIcon,
@@ -20,9 +20,7 @@
 import { useSlots } from "vue";
 
 defineProps<{
-  text: string;
-  children: string;
-  variant: string;
+  variant?: string;
 }>();
 
 const slots = useSlots();

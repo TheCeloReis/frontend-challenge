@@ -9,6 +9,7 @@ export interface Company {
 }
 
 export interface Item {
+  id: string;
   name: string;
   description: string;
   initialPrice: number;
@@ -17,6 +18,7 @@ export interface Item {
 }
 
 export interface Section {
+  id: string;
   name: string;
   description: string;
   required: boolean;
@@ -25,6 +27,7 @@ export interface Section {
 }
 
 export interface Option {
+  id: string;
   name: string;
   price: number;
   discountPrice?: number;

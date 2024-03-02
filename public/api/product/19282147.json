@@ -4,75 +4,89 @@
     "logo": "/imgs/matsuri-logo.png"
   },
   "item": {
+    "id": 19282147,
     "name": "Ceviche de salmão",
     "initialPrice": 1990,
     "image": "/imgs/ceviche-salmao.png",
     "description": "Salmão temperado com limão, cebola e pimenta",
     "sections": [
       {
+        "id": "6ee3b6e5-502f-473a-8922-25c5073dab2e",
         "name": "qual o tamanho?",
         "description": "escolha 1",
         "required": true,
         "type": "RADIO",
         "options": [
           {
+            "id": "311391ed-5cfe-44dd-a67e-13e4c5f3b950",
             "name": "médio",
             "price": 2290,
             "discountPrice": 1990
           },
           {
+            "id": "845f0097-de2e-4ebf-8e4e-db77931d71f5",
             "name": "grande",
             "price": 2890
           }
         ]
       },
       {
+        "id": "f085acea-3b75-4c38-a9e1-3d09065e3bfb",
         "name": "vai querer bebida?",
         "description": "escolha quantos quiser",
         "required": false,
         "type": "COUNTER",
         "options": [
           {
+            "id": "a19d6f70-c898-4654-9037-150797a905df",
             "name": "coca-cola",
             "price": 500
           },
           {
+            "id": "f21ae29e-3be2-4a1c-b093-9392bfb35f36",
             "name": "suco prats laranja",
             "price": 600
           },
           {
+            "id": "46a2cacf-654f-4535-81fa-e42238d001d0",
             "name": "água sem gás",
             "price": 300
           }
         ]
       },
       {
+        "id": "a92c3740-d26b-4232-a7b0-6054cf78f627",
         "name": "precisa de talher?",
         "description": "escolha até 1",
         "required": false,
         "type": "RADIO",
         "options": [
           {
+            "id": "26675ef9-c04d-40ef-99cb-b7993ebe2f43",
             "name": "hashi",
             "price": 0
           },
           {
+            "id": "7f956ee3-a04e-4ebd-9ae9-78b7af968e07",
             "name": "garfo e faca descartável",
             "price": 100
           }
         ]
       },
       {
+        "id": "d5e5fc14-ed1e-443b-919c-d628b5a1534f",
         "name": "mais alguma coisa?",
         "description": "escolha até 2",
         "required": false,
         "type": "CHECKBOX",
         "options": [
           {
+            "id": "d1cf9a0a-9988-4e98-b1f2-d3bacf09a9ce",
             "name": "biscoito da sorte",
             "price": 200
           },
           {
+            "id": "4cfeb715-43e2-4cc5-ad4f-24cbf5c8bb9b",
             "name": "rolinho primavera",
             "price": 800
           }
