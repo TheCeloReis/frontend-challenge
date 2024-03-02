@@ -6,7 +6,7 @@
 
     <div class="flex flex-col">
       <p class="text-primary-light text-sm">entregando em:</p>
-      <p class="text-lg inline-flex align-baseline">
+      <p class="text-lg inline-flex align-baseline whitespace-nowrap">
         Rua Mandaguari, 198
         <img
           class="inline-block h-6 w-6"

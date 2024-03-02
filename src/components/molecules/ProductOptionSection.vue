@@ -1,15 +1,15 @@
 <template>
-  <div class="w-full max-w-[1176px] mx-auto">
+  <div class="w-full max-w-[1208px] px-4 mx-auto">
     <div class="flex justify-between items-center mb-4">
       <div>
-        <h3 class="">{{ name }}</h3>
+        <h3 class="mb-0.5">{{ name }}</h3>
         <p class="text-muted text-xs">{{ description }}</p>
       </div>
 
       <ChipItem v-if="isRequired"> obrigatório</ChipItem>
     </div>
 
-    <div class="grid grid-cols-3 gap-14">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-14">
       <template v-if="type === 'RADIO'">
         <RadioGroup :options="options" />
       </template>

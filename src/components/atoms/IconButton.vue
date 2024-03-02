@@ -1,8 +1,10 @@
 <template>
   <button
     :class="{
+      'h-6 w-6': size === 'small',
       'h-7 w-7': !size || size === 'medium',
       'h-9 w-9': size === 'large',
+      'bg-primary-lightest rounded-md': filled,
     }"
     :disabled="disabled"
   >
@@ -15,7 +17,8 @@
 defineProps<{
   label: string;
   disabled?: boolean;
-  size?: "medium" | "large";
+  filled?: boolean;
+  size?: "small" | "medium" | "large";
 }>();
 </script>
 

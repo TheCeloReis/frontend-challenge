@@ -1,6 +1,6 @@
 <template>
   <section class="pt-4 pb-12">
-    <header class="flex items-center max-w-[1272px] w-full mx-auto mb-6">
+    <header class="flex items-center max-w-[1304px] px-4 w-full mx-auto mb-6">
       <img class="w-12 h-12 rounded mr-2" :src="product.company.logo" alt="" />
 
       <h1 class="text-2xl">
@@ -28,7 +28,7 @@
       <HorizontalRuler />
     </template>
 
-    <div class="max-w-[644px] w-full mx-auto">
+    <div class="max-w-[676px] w-full md:mx-auto px-4">
       <TextArea
         placeholder="alguma observação do item? • opcional
 ex: tirar algum ingrediente, ponto do prato"

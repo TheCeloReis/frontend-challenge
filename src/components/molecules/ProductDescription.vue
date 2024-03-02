@@ -1,5 +1,7 @@
 <template>
-  <div class="max-w-[1176px] w-full mx-auto flex gap-6 justi">
+  <div
+    class="max-w-[1208px] px-4 w-full mx-auto flex flex-col md:flex-row gap-6 justi"
+  >
     <div class="w-full">
       <h2 class="text-2xl">
         {{ name }}
@@ -17,9 +19,9 @@
       </p>
 
       <div
-        class="flex h-16 w-full max-w-[360px] justify-between items-center mt-8"
+        class="flex h-16 w-full md:max-w-[360px] justify-between items-center mt-8"
       >
-        <div class="flex flex-col">
+        <div class="flex flex-col justify">
           <p :class="{ 'mb-1': count > 0 }">quantos?</p>
           <p v-if="count" class="text-sm text-muted font-semibold">
             total
@@ -37,7 +39,7 @@
       </div>
     </div>
 
-    <div class="max-w-[380px] w-full">
+    <div class="md:max-w-[380px] w-full">
       <img class="rounded-xl" :src="photoURL" alt="" />
     </div>
   </div>
