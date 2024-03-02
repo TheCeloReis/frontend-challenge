@@ -19,14 +19,11 @@
 <script setup lang="ts">
 import { useSlots } from "vue";
 
-defineProps({
-  text: String,
-  children: String,
-  variant: {
-    type: String,
-    default: "primary",
-  },
-});
+defineProps<{
+  text: string;
+  children: string;
+  variant: string;
+}>();
 
 const slots = useSlots();
 

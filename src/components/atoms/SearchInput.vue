@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  placeholder: String,
-});
+defineProps<{
+  placeholder: string;
+}>();
 </script>
 
 <style scoped></style>
