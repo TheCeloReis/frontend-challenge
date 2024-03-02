@@ -7,7 +7,11 @@
       alt="search icon"
       class="h-6 w-6 absolute left-3 top-2"
     />
-    <input class="pl-11 w-full" type="text" :placeholder="placeholder" />
+    <input
+      class="pl-11 w-full font-semibold"
+      type="text"
+      :placeholder="placeholder"
+    />
   </div>
 </template>
 

@@ -1,0 +1,83 @@
+{
+  "company": {
+    "name": "Matsuri Concept",
+    "logo": "/imgs/matsuri-logo.png"
+  },
+  "item": {
+    "name": "Ceviche de salmão",
+    "initialPrice": 1990,
+    "image": "/imgs/ceviche-salmao.png",
+    "description": "Salmão temperado com limão, cebola e pimenta",
+    "sections": [
+      {
+        "name": "qual o tamanho?",
+        "description": "escolha 1",
+        "required": true,
+        "type": "RADIO",
+        "options": [
+          {
+            "name": "médio",
+            "price": 2290,
+            "discountPrice": 1990
+          },
+          {
+            "name": "grande",
+            "price": 2890
+          }
+        ]
+      },
+      {
+        "name": "vai querer bebida?",
+        "description": "escolha quantos quiser",
+        "required": false,
+        "type": "COUNTER",
+        "options": [
+          {
+            "name": "coca-cola",
+            "price": 500
+          },
+          {
+            "name": "suco prats laranja",
+            "price": 600
+          },
+          {
+            "name": "água sem gás",
+            "price": 300
+          }
+        ]
+      },
+      {
+        "name": "precisa de talher?",
+        "description": "escolha até 1",
+        "required": false,
+        "type": "RADIO",
+        "options": [
+          {
+            "name": "hashi",
+            "price": 0
+          },
+          {
+            "name": "garfo e faca descartável",
+            "price": 100
+          }
+        ]
+      },
+      {
+        "name": "mais alguma coisa?",
+        "description": "escolha até 2",
+        "required": false,
+        "type": "CHECKBOX",
+        "options": [
+          {
+            "name": "biscoito da sorte",
+            "price": 200
+          },
+          {
+            "name": "rolinho primavera",
+            "price": 800
+          }
+        ]
+      }
+    ]
+  }
+}

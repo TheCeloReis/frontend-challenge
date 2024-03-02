@@ -12,8 +12,14 @@ export default {
         },
 
         secondary: "#00a296",
+        discount: "#02A117",
 
         muted: "#6D6F73",
+        foreground: "#EEF0F5",
+        baseText: "#202326",
+        border: "#CDD1D9",
+
+        warning: "#393A3C",
       },
       fontFamily: {
         sans: ["Nunito", "sans-serif"],
