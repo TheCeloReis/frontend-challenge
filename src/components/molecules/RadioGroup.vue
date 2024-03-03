@@ -6,6 +6,7 @@
     :label="option.name"
     :price="option.price"
     :discountPrice="option.discountPrice"
+    :value="option.id"
     v-model="model"
   />
 </template>
@@ -17,6 +18,7 @@ const name = Math.random().toString(36).substr(2, 9);
 
 defineProps<{
   options: Array<{
+    id: string;
     name: string;
     price: number;
     discountPrice?: number;

@@ -46,12 +46,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import currencyFormatter from "../../utils/currencyFormatter";
 import BaseButton from "../atoms/BaseButton.vue";
 import CounterControll from "./CounterControll.vue";
 
-const count = ref(0);
+const count = defineModel({ default: 0 });
 
 const props = defineProps<{
   name: string;

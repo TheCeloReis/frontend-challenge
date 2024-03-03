@@ -5,6 +5,9 @@
       type="checkbox"
       :id="labelId"
       :name="name"
+      :value="value"
+      :checked="isChecked"
+      @change="handleChange($event)"
     />
 
     <span class="flex justify-between items-center h-6">
@@ -43,15 +46,32 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 import currencyFormatter from "../../utils/currencyFormatter";
 const labelId = "label-1" + Math.random().toString(36).substr(2, 9);
 
-defineProps<{
+const props = defineProps<{
   name: string;
   label: string;
   price: number;
   discountPrice?: number;
+  value: string;
 }>();
+
+const model = defineModel<Array<string>>("groupModel", {
+  default: [],
+});
+
+const handleChange = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+  if (target.checked) {
+    model.value = [...model.value, props.value];
+  } else {
+    model.value = model.value.filter((item) => item !== props.value);
+  }
+};
+
+const isChecked = computed(() => model.value.includes(props.value));
 </script>
 
 <style scoped>

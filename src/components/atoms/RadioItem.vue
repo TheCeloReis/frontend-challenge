@@ -5,6 +5,8 @@
       type="radio"
       :id="labelId"
       :name="name"
+      :value="value"
+      v-model="model"
     />
 
     <span class="flex justify-between items-center">
@@ -42,7 +44,12 @@
 import currencyFormatter from "../../utils/currencyFormatter";
 const labelId = "label-1" + Math.random().toString(36).substr(2, 9);
 
+const model = defineModel<string>({
+  default: "",
+});
+
 defineProps<{
+  value: string;
   name: string;
   label: string;
   price: number;

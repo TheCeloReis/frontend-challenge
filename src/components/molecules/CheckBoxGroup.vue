@@ -6,7 +6,8 @@
     :label="option.name"
     :price="option.price"
     :discountPrice="option.discountPrice"
-    v-model="model"
+    :value="option.id"
+    v-model:groupModel="model"
   />
 </template>
 
@@ -21,6 +22,7 @@ const model = defineModel<Array<string>>({
 
 defineProps<{
   options: Array<{
+    id: string;
     name: string;
     price: number;
     discountPrice?: number;

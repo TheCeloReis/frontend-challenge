@@ -57,7 +57,6 @@ npm start
 
 Foquei em entregar o projeto no tempo estipulado e com design fiel e responsivo, por isso, algumas coisas ficaram de fora. Abaixo, listo as melhorias que poderiam ser feitas por ordem de prioridade:
 
-- Melhor tratamento de dados globais (pinia?) e preenchimento do form(Botão ticket)
 - Adicionar testes unitarios com vitest e/ou vue testing library
 - Melhor componentização dos icones de SVG, permitindo a customização de cores
 - Adicionar CI/CD e deploy

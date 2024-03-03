@@ -28,7 +28,7 @@
           <img class="h-9 w-9" src="/icons/searchPrimary.svg" alt="" />
         </IconButton>
 
-        <div class="mr-6 ml-auto sm:ml-4">
+        <div class="mr-6 ml-auto sm:ml-4" v-if="product.showOrderTicket">
           <BaseButton variant="secondary">
             <template #leftIcon>
               <img class="h-6 w-6 mr-2" src="/icons/bookmark.svg" alt="" />
@@ -49,10 +49,14 @@
 </template>
 
 <script setup lang="ts">
+import { useProductStore } from "../../stores/product";
+
 import AddressSelector from "../atoms/AddressSelector.vue";
 import BaseButton from "../atoms/BaseButton.vue";
 import IconButton from "../atoms/IconButton.vue";
 import SearchInput from "../atoms/SearchInput.vue";
+
+const product = useProductStore();
 </script>
 
 <style scoped></style>

@@ -19,4 +19,4 @@
 const currentYear = new Date().getFullYear();
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
